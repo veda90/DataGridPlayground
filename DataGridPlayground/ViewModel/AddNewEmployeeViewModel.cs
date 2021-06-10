@@ -48,7 +48,7 @@ namespace DataGridPlayground.ViewModel
             set { SetProperty(ref team, value); }
         }
 
-        public ParameterLessRelayCommand  SaveCmd { get;  }
+        public ParameterLessRelayCommand SaveCmd { get; }
 
         // Constructor
         public AddNewEmployeeViewModel()
@@ -62,16 +62,16 @@ namespace DataGridPlayground.ViewModel
 
         public void SaveDetails()
         {
-            Helper.Helper.employees.Add(new Model.Employee() { Name=Name, Id=Id, Mail=Mail, Project=Project, Team=Team});
+            Helper.Helper.employees.Add(new Model.Employee() { Name = Name, Id = Id, Mail = Mail, Project = Project, Team = Team });
             Name = "";
             Id = 0;
             Mail = "";
             Project = "";
             Team = "";
-            
+
         }
 
-        public int AddNumbers(int a ,int b)
+        public int AddNumbers(int a, int b)
         {
             return a + b;
         }
