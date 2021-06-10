@@ -42,6 +42,7 @@
                         <Style.Triggers>
                             <DataTrigger Binding="{Binding ElementName=chkBox,Path=IsChecked}" Value="True">
                                 <Setter Property="BorderBrush" Value="Green"/>
+                                <Setter Property="Text" Value="Responded to trigger"/>
                             </DataTrigger>
                             <!--<Trigger Property="IsMouseOver" Value="True">
                                 <Setter Property="BorderBrush" Value="Orange" />
